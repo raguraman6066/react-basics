@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+      /* * {
+        margin: 0;
+      } */
+      .card {
+        box-shadow: 0 0 10px green;
+        padding: 10px;
+        width: 270px;
+        height: 400px;
+      }
+      .header {
+        background-color: black;
+        height: 90px;
+        color: white;
+        display: flex;
+      }
+      .footer {
+        background-color: rgb(117, 27, 27);
+        height: 150px;
+        color: white;
+      }
+      .leftPanel {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .flexContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .rightPanel {
+        width: 60%;
+      }
+      .rightPanel a {
+        color: white;
+        text-decoration: none;
+        margin-right: 50px;
+      }
+      .CardContainers {
+        display: flex;
+
+        justify-content: space-evenly;
+      }
+      .profileimg {
+        border-radius: 50%;
+      }
+      .profileimg {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        margin: 10px 30px;
+      }
+      .profilesection {
+        margin: 50px;
+      }
+      .main {
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function Header() {
+        return (
+          <div class="header ">
+            <div class="leftPanel flexContainer">
+              <h1>First-Page-In-React</h1>
+            </div>
+            <div class="rightPanel flexContainer">
+              <a href="#">Home</a>
+              <a href="#">Profile</a>
+              <a href="#">Products</a>
+              <a href="#">ContactUs</a>
+              <a href="#">Login</a>
+            </div>
+          </div>
+        );
+      }
+      function Footer() {
+        return (
+          <div class="footer flexContainer ">
+            <h1>Footer Component</h1>
+          </div>
+        );
+      }
+
+      function Card() {
+        return (
+          <div class="card">
+            <img
+              src="https://t3.ftcdn.net/jpg/02/99/04/20/360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg"
+              alt="person image"
+              height="250"
+              width="100%"
+            />
+            <h3>React</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+              explicabo?
+            </p>
+            <button>Profile Details</button>
+          </div>
+        );
+      }
+
+      function ProfileContainer() {
+        return (
+          <div class="profilesection flexContainer">
+            <div class="leftPanel">
+              <img
+                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww"
+                alt=""
+                class="profileimg"
+              />
+            </div>
+            <div class="rightPanel">
+              <h3>Lorem Andrea</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+                quos ratione! Quae culpa quam excepturi, accusamus nostrum eum
+                repellendus porro eos possimus sint vitae eveniet nihil totam
+                quidem quis tenetur minus dolorum veritatis minima? Dicta sunt
+                laborum ipsam earum eum accusamus excepturi reiciendis
+                architecto vel. <br /> <br /> Voluptate blanditiis officiis
+                veritatis hic! Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quasi, quos ratione! Quae culpa quam
+                excepturi, accusamus nostrum eum repellendus porro eos possimus
+                sint vitae eveniet nihil totam quidem quis tenetur minus dolorum
+                veritatis minima?
+                <br /> <br /> Dicta sunt laborum ipsam earum eum accusamus
+                excepturi reiciendis architecto vel. Voluptate blanditiis
+                officiis veritatis hic!
+              </p>
+            </div>
+          </div>
+        );
+      }
+
+      function Main() {
+        return (
+          <div class="main">
+            <ProfileContainer />
+            <div class="CardContainers">
+              <Card />
+              <Card />
+              <Card />
+              <Card />
+            </div>
+          </div>
+        );
+      }
+
+      function App() {
+        return (
+          <div>
+            <Header />
+            <Main />
+            <Footer />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+  </body>
+</html>

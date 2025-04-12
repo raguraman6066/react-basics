@@ -1,0 +1,100 @@
+react js
+--------
+
+
+agenda
+1. pre-requisite for react
+2. what is react.
+3. purpose of react.
+4. why react
+
+
+1.pre-requisite to learn react
+
+html: elements,tags,attributes.
+css: general properties,selectors,flex(optional),gird(optional)
+javascript: variables,datatypes,functions,operators,control statements,
+object,array,dom and dom manipulation,events.
+advance javascript: es6,promises,oops,let var const,
+module scope,closures
+
+
+2.what is react or react js
+react js is javascript library, not a framework.
+library- collection of pre-defined functions ,classes or objects which are developed in js.
+
+3.purpose of react js or react
+react js is used to create user interface. we can not create frontend application with react.
+ui is one of part of frontend application. ex- validation,sending req to server, data management.so some other libraries we need to complete frontend application.ex:redux,axios,reactrouter.
+
+react--> user interface->+other libraries-->frontend application-->frontend engineer
+
+**lot of demands
+
+4.why react to develop user interface.
+
+html -> user interface we can develop
+js -> user interface we can develop
+
+why in react---?
+
+
+
+----------------------------------------------------------------------
+
+
+
+user interface- collection of ui components (ex:button,text,heading..) which user can see and interact with.
+
+
+create ui in html and js
+
+create a simple button using js- predefined objects and functions, using this we can create dom button elements.then add to dom.
+
+1. in html ..we can not reuse (user interface) list  items or any other block of design or components.simple code.
+2. in javascript ..we put all dom list into one function..we can call and reuse it. js long code
+
+in react.
+--------
+
+take advantages of html and javascript..leave drawbacks of it.
+1. creating ui is simple
+2. we can re-use the ui
+
+
+
+create button in react
+----------------------
+
+1. create html file
+2. add basic code of html.
+3. script tag of html,write react code
+4. integrate react to html.
+
+5. create js file and created functions and classes.
+
+
+jsx
+----
+
+jsx element-->babel compiler-->react element(complex to create)-->react dom-->dom-->ui
+
+-------------------------------------------------------
+default width and height of div:
+width:100%;
+height: auto; depends on child
+
+
+
+-we create react ui inside javascript function because of reuse and to pass dynamic data.
+
+-functional component->js function which start with uppercase name and return jsx ui .
+
+-functional component
+-class component(not recommended) - nobody use in industries right now.react itself recommended to use functional components.
+because simple and fast in execution.
+
+-components represents view on the screen.
+
+-react application will be collection of components.
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Container in React</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+      .techcontainer {
+        box-shadow: 0 0 5px gray;
+        margin-bottom: 10px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function Techcontainer(tech) {
+        return (
+          <div class="techcontainer">
+            <h2>React JS</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              nemo vitae temporibus laudantium eum eos earum ratione excepturi
+              similique nesciunt perferendis dolorem sapiente quas, adipisci
+              explicabo laboriosam hic qui ullam!
+            </p>
+            <button>Learn</button>
+          </div>
+        );
+      }
+
+      function Maincontainer() {
+        return (
+          <div>
+            <Techcontainer />
+            <Techcontainer />
+            <Techcontainer />
+            <Techcontainer />
+          </div>
+        );
+      }
+      ReactDOM.render(<Maincontainer />, document.getElementById("root"));
+    </script>
+  </body>
+</html>

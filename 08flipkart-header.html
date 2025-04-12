@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu in React</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+      .menuitems {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function Menucard(props) {
+        return (
+          <div>
+            <img src={props.url} alt="" width="70" height="70" />
+            <p>{props.title}</p>
+          </div>
+        );
+      }
+
+      function MenuItems() {
+        const containerStyle = {
+          display: "flex",
+          justifyContent: "space-evenly",
+        };
+        return (
+          <div style={containerStyle}>
+            <Menucard
+              url="https://rukminim2.flixcart.com/flap/64/64/image/29327f40e9c4d26b.png?q=100"
+              title="Kilos"
+            />
+            <Menucard
+              url="https://rukminim2.flixcart.com/flap/64/64/image/22fddf3c7da4c4f4.png?q=100"
+              title="Mobile"
+            />
+            <Menucard
+              url="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/0139228b2f7eb413.jpg?q=100"
+              title="Appliances"
+            />
+            <Menucard
+              url="https://rukminim2.flixcart.com/flap/64/64/image/71050627a56b4693.png?q=100"
+              title="Flight Bookings"
+            />
+            <Menucard
+              url="https://rukminim2.flixcart.com/flap/64/64/image/29327f40e9c4d26b.png?q=100"
+              title="Kilos"
+            />
+            <Menucard
+              url="https://rukminim2.flixcart.com/flap/64/64/image/22fddf3c7da4c4f4.png?q=100"
+              title="Mobile"
+            />
+            <Menucard
+              url="https://rukminim2.flixcart.com/fk-p-flap/64/64/image/0139228b2f7eb413.jpg?q=100"
+              title="Appliances"
+            />
+            <Menucard
+              url="https://rukminim2.flixcart.com/flap/64/64/image/71050627a56b4693.png?q=100"
+              title="Flight Bookings"
+            />
+          </div>
+        );
+      }
+      ReactDOM.render(<MenuItems />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
