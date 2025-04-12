@@ -98,3 +98,17 @@ because simple and fast in execution.
 
 -react application will be collection of components.
 
+-----------------------------------------------------
+
+
+basics of react..
+
+1.React Elements – Basic objects describing what to render on the screen.
+
+2.JSX Elements – HTML-like syntax used to write React elements more easily.
+
+3.Functional Components – Functions that return JSX to display UI.
+
+4.Props – Inputs passed to components to make them dynamic.
+
+5.State – Internal data of a component that can change over time.
